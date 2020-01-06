@@ -13,15 +13,15 @@ class DealsPage extends Component {
   };
 
   componentDidMount() {
-    axios.get("http://localhost:8080/bapcsales").then(resp => {
+    axios.get("/api/bapcsales").then(resp => {
       let newDeals = [...resp.data.deals, ...this.state.deals];
       this.setState({ deals: newDeals });
     });
-    axios.get("http://localhost:8080/gamedeals").then(resp => {
+    axios.get("/api/gamedeals").then(resp => {
       let newDeals = [...resp.data.deals, ...this.state.deals];
       this.setState({ deals: newDeals });
     });
-    axios.get("http://localhost:8080/redflagdeals").then(resp => {
+    axios.get("/api/redflagdeals").then(resp => {
       let newDeals = [...resp.data.deals, ...this.state.deals];
       this.setState({ deals: newDeals });
     });
@@ -39,6 +39,7 @@ class DealsPage extends Component {
     return (
       <div className={classes.Dealspage}>
         <Background/>
+        <p className={classes.Title}><strong>Current Deals</strong></p>
         <Searchbar changed={this.handleChange}/>
         <Deals items={this.state.deals} search={this.state.search} clicked={this.openExternalUrl}/>
         <div>Navigation controls</div>

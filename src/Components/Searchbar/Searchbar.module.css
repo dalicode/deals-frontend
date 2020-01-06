@@ -17,3 +17,9 @@
 input:focus::placeholder {
     color: transparent;
   }
+
+  @media (max-width: 500px) {
+      .Searchbar {
+          width: 70%
+      }
+  }

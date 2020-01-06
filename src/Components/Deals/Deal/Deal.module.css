@@ -18,3 +18,9 @@
     z-index: 101;
     cursor: pointer;
   }
+
+  @media (max-width: 500px) {
+    .Deal {
+        width: 70%
+    }
+}
