@@ -1,18 +1,11 @@
 .Dealspage{
     text-align: center;
     margin-bottom: 10%;
-}
-
-.Title{
-    font-size: 3em;
-    color: azure;
-    margin: 10% 0 3% 0;
-    padding: 0;
-    font-weight: 700;
+    margin-top: 10%;
 }
 
 @media (max-width: 500px) {
     .Title {
-        font-size: 2em;
+        font-size: 3em;
     }
 }

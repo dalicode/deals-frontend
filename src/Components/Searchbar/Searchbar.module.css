@@ -1,8 +1,9 @@
 
 .Searchbar {
     position: relative;
-    margin-bottom: 20px;
-    width: 40%;
+    margin-bottom: 1%;
+    margin-top: 0;
+    width: 50%;
     height: 2em;
     border-radius: 10px;
     background-color: #080920;

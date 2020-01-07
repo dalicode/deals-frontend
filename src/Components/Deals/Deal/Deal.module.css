@@ -1,7 +1,7 @@
 .Deal {
     padding: 1px 24px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-    width: 40%;
+    width: 50%;
     display: block;
     margin: auto;
     margin-top: 10px;
@@ -9,7 +9,9 @@
     z-index: 100;
     background-color: white;
     border-radius: 2px;
-    background-color: #eef4ed;
+    background-color: #eef4ed2c;
+    color: white;
+    font-size: 18px;
 }
 
 .Deal:hover {
@@ -21,6 +23,7 @@
 
   @media (max-width: 500px) {
     .Deal {
-        width: 70%
+        width: 70%;
+        font-size: 1em;
     }
 }
