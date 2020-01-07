@@ -59,7 +59,7 @@ class DealsPage extends Component {
           search={this.state.search}
           clicked={this.openExternalUrl}
         />
-        <div>Navigation controls</div>
+        {/* <div>Navigation controls</div> */}
       </div>
     );
   }
